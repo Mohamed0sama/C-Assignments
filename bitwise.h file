@@ -1,0 +1,15 @@
+/***********************************/
+/* Description : Standard Types lib*/
+/* Author      : Abo elnour        */
+/* Version     : 0.1v              */
+/* Date        : 11 Nov 2022       */
+/***********************************/
+#ifndef BIT_MATH_H
+#define BIT_MATH_h
+
+#define		SET_BIT(REG,bitNo)	((REG) | (1<<bitNo))
+#define		CLR_BIT(REG,bitNo)	(REG &(~(1<<(bitNo-1))))
+#define		GET_BIT(REG,bitNo)	((REG>>bitNo)&1)	
+#define		TGL_BIT(REG,bitNo)	(REG^(1<<(bitNo-1)))
+
+#endif
